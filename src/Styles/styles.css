@@ -1,0 +1,322 @@
+@import "reset.css";
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    direction: rtl;
+    background-color: #f0f0f0;
+    font-family: vazirNormal;
+}
+
+input {
+    font-family: vazirNormal;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* container styles */
+
+.container {
+    width: 1100px;
+    margin: auto;
+    /* height: 500px; */
+    /* background-color: rgb(214, 214, 214); */
+    position: relative;
+}
+
+
+/* header styles */
+
+header {
+    /* background-color: indianred; */
+    margin-top: 20px;
+}
+header .logo img {
+    width: 90px;
+}
+header .logo .titles {
+    display: inline-block;
+    /* vertical-align: 20px; */
+    position: relative;
+    top: -16px;
+    right: 12px;
+}
+header .titles h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+header .titles h2 {
+    font-size: 15px;
+}
+header .btns {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+} 
+header .btns .button {
+    color: white;
+    padding: 7px 14px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+header .btns .sign {
+    background-color: #1565C0;
+}
+header .btns .sign:hover {
+    background-color: #0D47A1;
+}
+header .btns .register {
+    background-color: #2E7D32;
+}
+header .btns .register:hover {
+    background-color: #1B5E20;
+}
+
+
+/* navigation bar styles */
+
+
+#nav {
+    background-color: #263238;
+    margin-top: 20px;
+}
+#nav ul li {
+    display: inline-block;
+}
+#nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 20px;
+    transition: 0.25s;
+}
+#nav ul li a:hover {
+    background-color: #37474F;
+    transition: 0.15;
+}
+
+
+/* content styles */
+
+
+#content {
+    /* background-color: hotpink; */
+    width: 70%;
+    float: right;
+    margin-top: 20px;
+}
+#content #post-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+#content #post-item:first-child {
+    margin-top: 0;
+}
+#content #post-item h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    border-bottom: 2px dashed #ccc;
+}
+#content #post-item .post-img {
+    float: right;
+    margin: 10px;
+    /* padding: 10px; */
+}
+#content #post-item .post-img img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid gray;
+}
+#content .post-content {
+    height: 250px;
+}
+#content .post-content p {
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 40px;
+    padding: 20px;
+    height: 230px;
+    overflow: hidden;
+}
+#content .post-data {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+#content .post-data .read-more {
+    background-color: #212121;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+#content .post-data .read-more:hover {
+    background-color: #020202;
+}
+
+
+/* side-bar styles */
+
+
+#side-bar {
+    /* background-color: indianred; */
+    width: 29%;
+    float: left;
+    margin-top: 20px;
+}
+#side-bar .items {
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#side-bar .items:first-child {
+    margin-top: 0;
+}
+#side-bar .items .sidebar-header {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+}
+#side-bar .items .sidebar-content {
+    padding: 10px;
+}
+#side-bar .category .sidebar-content ul li a {
+    text-decoration: none;
+    color: #212121;
+    border-right: 2px solid #212121;
+    padding-right: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+#side-bar .category .sidebar-content ul li a:hover {
+    border-right: 4px solid #1565C0;
+    margin-right: 5px;
+    transition: 0.25s;
+}
+#side-bar .newsletter .sidebar-content p {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    line-height: 25px;
+    font-size: 17px;
+}
+#side-bar .newsletter form {
+    text-align: center;
+}
+#side-bar .newsletter form .email-input {
+    width: 90%;
+    padding: 5px;
+    margin-top: 10px;
+    /* font-family: vazirNormal; */
+}
+#side-bar .newsletter form .submit-btn {
+    background-color: #2E7D32;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#side-bar .newsletter form .submit-btn:hover {
+    background-color: #1B5E20;
+    cursor: pointer;
+}
+
+
+/* footer syles */
+#footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    /* display: none; */
+}
+
+
+
+/* Resposive styles */
+
+/* breakpoint for tablets */
+@media  screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    #content {
+        float: none;
+        width: 100%;
+    }
+    #side-bar {
+        float: none;
+        width: 50%;
+        margin: 20px auto;
+        /* text-align: center; */
+    }  
+}
+
+/* breakpoin for mobiles */
+@media screen and (max-width: 400px) {
+    .container {
+        width: 95%;
+    }
+    #content {
+        float: none;
+        width: 100%;
+    }
+    #side-bar {
+        float: none;
+        width: 100%;
+    }
+    #nav ul li {
+        display: block;
+        text-align: center;
+    }
+    #nav ul li:hover {
+        background-color: #ccc;
+        
+    }   
+    #nav ul li:hover a {
+        color: black;
+    }
+    #nav ul li a {
+        padding: 10px 0;
+    }
+    #nav ul li a:hover {
+        background-color: transparent;
+        transition: none;
+    }
+    header .btns {
+        display: none;
+    }
+    #footer {
+        line-height: 25px;
+    }
+    #content #post-item .post-img img {
+        width: 150px;
+        /* height: 200px; */
+        margin-top: 20px;
+    } 
+}
